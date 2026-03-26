@@ -876,7 +876,7 @@
         </div>
 
         <div class="gameplay-preview">
-          <video src="image/idr.mp4" autoplay loop muted playsinline class="gameplay-gif" id="gameplay-gif"></video>
+          <video src="image/usd.mp4" autoplay loop muted playsinline class="gameplay-gif" id="gameplay-gif"></video>
         </div>
 
         <!-- Bonus Alert (над кнопкой) -->
@@ -984,7 +984,7 @@
         currency: 'IDR',
         currencySymbol: 'Rp',
         locale: 'id-ID',
-        gif: 'image/idr.mp4',
+        gif: 'image/usd.mp4',
         prizes: { min: 75000, max: 750000, bigMax: 3000000, bonus: 500000 },
         defaultBonus: 'Sampai 30jt + 290FS',
         liveText: 'sedang bermain',
@@ -1260,28 +1260,9 @@
     }
 
     async function detectGeo() {
-      try {
-        const ctrl = new AbortController();
-        setTimeout(() => ctrl.abort(), 3000); // 3сек таймаут
-        const response = await fetch('/api/geo', { signal: ctrl.signal });
-        const data = await response.json();
-        const country = data.country;
-
-        if (!country) {
-          return getLocaleFromClient();
-        }
-
-        GEO_COUNTRY = country;
-
-        if (country === 'ID') {
-          return 'id';
-        }
-
-        return getLocaleFromCountry(country);
-      } catch (e) {
-        console.error('Geo detection failed:', e);
-        return getLocaleFromClient();
-      }
+      // Принудительно Индонезия
+      GEO_COUNTRY = 'ID';
+      return 'id';
     }
 
     // ============================
