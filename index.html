@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
@@ -78,7 +78,6 @@
       pointer-events: none;
     }
 
-    /* Страховка: если JS не спрячет лоадер, CSS спрячет через 5сек */
     .geo-loading {
       animation: force-hide 0.5s ease 5s forwards;
     }
@@ -105,7 +104,7 @@
       }
     }
 
-    /* Live Counter (вверху) */
+    /* Live Counter */
     .live-counter {
       position: fixed;
       top: 0;
@@ -172,7 +171,6 @@
       font-weight: 700;
     }
 
-    /* Bonus Alert (над кнопкой) */
     /* Combined CTA Wrapper */
     .cta-wrapper {
       max-width: 400px;
@@ -756,18 +754,17 @@
   <div class="live-counter">
     <div class="live-indicator">
       <span class="live-dot"></span>
-      <span class="live-count" id="live-count">2,847</span> <span id="live-text">jugando ahora</span>
+      <span class="live-count" id="live-count">2.847</span> <span id="live-text">sedang bermain</span>
     </div>
     <span class="live-separator"></span>
     <div>
-      <span class="winners-hour" id="winners-count">+124</span> <span id="winners-text">ganaron última hora</span>
+      <span class="winners-hour" id="winners-count">+124</span> <span id="winners-text">menang 1 jam terakhir</span>
     </div>
   </div>
 
   <!-- Winners Ticker -->
   <div class="winners-ticker">
     <div class="winners-track" id="winners-track">
-      <!-- Будет заполнено через JavaScript -->
     </div>
   </div>
 
@@ -777,7 +774,7 @@
       <!-- Hero Section -->
       <div class="hero-section">
 
-        <div class="section-title" id="section-title"><span>▸</span> ELIGE TU JUEGO</div>
+        <div class="section-title" id="section-title"><span>▸</span> PILIH PERMAINANMU</div>
 
         <!-- Games Grid -->
         <div class="games-grid">
@@ -787,11 +784,11 @@
               <img src="image/usd.gif" alt="Mineslot" id="gameplay-gif">
             </div>
             <div class="game-card__name">MINESLOT</div>
-            <a href="https://lkpf.pro/540ac634" id="cta-link" target="_blank" class="game-card__cta">
+            <a href="https://lkeh.pro/bc274a" id="cta-link" target="_blank" class="game-card__cta">
               <svg class="game-card__cta-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span id="cta-text">JUGAR</span>
+              <span id="cta-text">MAIN</span>
               <span class="cta-shine"></span>
             </a>
           </div>
@@ -802,11 +799,11 @@
               <video src="image/rush-hour.mp4" autoplay loop muted playsinline id="rushhour-video"></video>
             </div>
             <div class="game-card__name">RUSH HOUR</div>
-            <a href="https://lkpf.pro/540ac634" id="cta-link-rh" target="_blank" class="game-card__cta">
+            <a href="https://lkeh.pro/bc274a" id="cta-link-rh" target="_blank" class="game-card__cta">
               <svg class="game-card__cta-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span id="cta-text-rh">JUGAR</span>
+              <span id="cta-text-rh">MAIN</span>
               <span class="cta-shine"></span>
             </a>
           </div>
@@ -817,21 +814,21 @@
           <div class="bonus-header">
             <div class="bonus-icon">🎁</div>
             <div class="bonus-info">
-              <div class="bonus-title" id="bonus-title">BONO ESPECIAL</div>
+              <div class="bonus-title" id="bonus-title">BONUS SPESIAL</div>
               <div class="bonus-amount">
-                <span id="bonus-amount">50</span> <span id="bonus-currency">USD</span>
+                <span id="bonus-amount">500.000</span> <span id="bonus-currency">IDR</span>
               </div>
             </div>
             <div class="bonus-timer">
               <span id="timer">05:00</span>
             </div>
           </div>
-          <div class="cta-hint" id="cta-hint">↑ Elige un juego y obtén tu bono ↑</div>
+          <div class="cta-hint" id="cta-hint">↑ Pilih permainan dan dapatkan bonusmu ↑</div>
         </div>
 
         <!-- How to Play Button -->
         <button class="how-to-play-btn" id="how-to-play-btn">
-          <span id="how-to-play-text">¿Cómo jugar?</span>
+          <span id="how-to-play-text">Cara bermain?</span>
           <span class="arrow-icon">▼</span>
         </button>
 
@@ -839,19 +836,19 @@
         <div class="how-to-play-panel" id="how-to-play-panel">
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-text" id="step-1">Regístrate usando cualquier botón "Jugar"</div>
+            <div class="step-text" id="step-1">Daftar menggunakan tombol "Main"</div>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-text" id="step-2">Deposita cualquier cantidad</div>
+            <div class="step-text" id="step-2">Deposit dengan jumlah berapa saja</div>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <div class="step-text" id="step-3">Busca "Mine Slot" o "Rush Hour" en el casino</div>
+            <div class="step-text" id="step-3">Cari "Mine Slot" atau "Rush Hour" di kasino</div>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-text" id="step-4">¡Empieza a ganar!</div>
+            <div class="step-text" id="step-4">Mulai menang!</div>
           </div>
         </div>
       </div>
@@ -860,270 +857,80 @@
   </div>
 
   <script>
-    // Конфигурация стран LATAM
+    // Konfigurasi Indonesia
     const COUNTRIES_CONFIG = {
-      MX: { // Мексика
-        name: 'México',
-        currency: 'MXN',
-        currencySymbol: '$',
-        flag: '🇲🇽',
-        locale: 'es-MX',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/mxn.gif',
-        prizes: { min: 2000, max: 50000, bonus: 1000 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      AR: { // Аргентина
-        name: 'Argentina',
-        currency: 'ARS',
-        currencySymbol: '$',
-        flag: '🇦🇷',
-        locale: 'es-AR',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/ars.gif',
-        prizes: { min: 50000, max: 2000000, bonus: 25000 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Registrate usando el botón "Jugar"',
-          step2: 'Depositá cualquier cantidad',
-          step3: 'Buscá "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empezá a ganar!',
-          ctaHint: '↑ Elegí un juego y obtené tu bono ↑'
-        }
-      },
-      CO: { // Колумбия
-        name: 'Colombia',
-        currency: 'COP',
-        currencySymbol: '$',
-        flag: '🇨🇴',
-        locale: 'es-CO',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/cop.gif',
-        prizes: { min: 50000, max: 5000000, bonus: 200000 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      CL: { // Чили
-        name: 'Chile',
-        currency: 'CLP',
-        currencySymbol: '$',
-        flag: '🇨🇱',
-        locale: 'es-CL',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/clp.gif',
-        prizes: { min: 10000, max: 10000000, bonus: 50000 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      PE: { // Перу
-        name: 'Perú',
-        currency: 'PEN',
-        currencySymbol: 'S/',
-        flag: '🇵🇪',
-        locale: 'es-PE',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/pen.gif',
-        prizes: { min: 100, max: 50000, bonus: 200 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      BR: { // Бразилия
-        name: 'Brasil',
-        currency: 'BRL',
-        currencySymbol: 'R$',
-        flag: '🇧🇷',
-        locale: 'pt-BR',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/brl.gif',
-        prizes: { min: 100, max: 50000, bonus: 250 },
-        text: {
-          cta: 'JOGAR',
-          bonusTitle: 'BÔNUS ESPECIAL',
-          liveText: 'jogando agora',
-          winnersText: 'ganharam última hora',
-          howToPlay: 'Como jogar?',
-          step1: 'Cadastre-se usando o botão "Jogar"',
-          step2: 'Deposite qualquer valor',
-          step3: 'Procure "Mine Slot" ou "Rush Hour" no cassino',
-          step4: 'Comece a ganhar!',
-          ctaHint: '↑ Escolha um jogo e ganhe seu bônus ↑'
-        }
-      },
-      VE: { // Венесуэла
-        name: 'Venezuela',
-        currency: 'USD',
-        currencySymbol: '$',
-        flag: '🇻🇪',
-        locale: 'es-VE',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
+      ID: {
+        name: 'Indonesia',
+        currency: 'IDR',
+        currencySymbol: 'Rp',
+        flag: '🇮🇩',
+        locale: 'id-ID',
+        offer: 'https://lkeh.pro/bc274a',
+        defaultLink: 'https://lkeh.pro/bc274a',
         gif: 'image/usd.gif',
-        prizes: { min: 10, max: 1000, bonus: 50 },
+        prizes: { min: 50000, max: 10000000, bonus: 500000 },
         text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
+          cta: 'MAIN',
+          bonusTitle: 'BONUS SPESIAL',
+          liveText: 'sedang bermain',
+          winnersText: 'menang 1 jam terakhir',
+          howToPlay: 'Cara bermain?',
+          step1: 'Daftar menggunakan tombol "Main"',
+          step2: 'Deposit dengan jumlah berapa saja',
+          step3: 'Cari "Mine Slot" atau "Rush Hour" di kasino',
+          step4: 'Mulai menang!',
+          ctaHint: '↑ Pilih permainan dan dapatkan bonusmu ↑',
+          sectionTitle: 'PILIH PERMAINANMU'
         }
       },
-      EC: { // Эквадор
-        name: 'Ecuador',
-        currency: 'USD',
-        currencySymbol: '$',
-        flag: '🇪🇨',
-        locale: 'es-EC',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
+      DEFAULT: {
+        name: 'Indonesia',
+        currency: 'IDR',
+        currencySymbol: 'Rp',
+        flag: '🇮🇩',
+        locale: 'id-ID',
+        offer: 'https://lkeh.pro/bc274a',
+        defaultLink: 'https://lkeh.pro/bc274a',
         gif: 'image/usd.gif',
-        prizes: { min: 10, max: 1000, bonus: 50 },
+        prizes: { min: 50000, max: 10000000, bonus: 500000 },
         text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      ES: { // Испания
-        name: 'España',
-        currency: 'EUR',
-        currencySymbol: '€',
-        flag: '🇪🇸',
-        locale: 'es-ES',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/es.gif',
-        prizes: { min: 10, max: 1000, bonus: 50 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
-        }
-      },
-      DEFAULT: { // Fallback
-        name: 'LATAM',
-        currency: 'USD',
-        currencySymbol: '$',
-        flag: '🌎',
-        locale: 'es',
-        offer: 'https://lkpf.pro/540ac634',
-        defaultLink: 'https://lkpf.pro/540ac634',
-        gif: 'image/usd.gif',
-        prizes: { min: 10, max: 1000, bonus: 50 },
-        text: {
-          cta: 'JUGAR',
-          bonusTitle: 'BONO ESPECIAL',
-          liveText: 'jugando ahora',
-          winnersText: 'ganaron última hora',
-          howToPlay: '¿Cómo jugar?',
-          step1: 'Regístrate usando el botón "Jugar"',
-          step2: 'Deposita cualquier cantidad',
-          step3: 'Busca "Mine Slot" o "Rush Hour" en el casino',
-          step4: '¡Empieza a ganar!',
-          ctaHint: '↑ Elige un juego y obtén tu bono ↑'
+          cta: 'MAIN',
+          bonusTitle: 'BONUS SPESIAL',
+          liveText: 'sedang bermain',
+          winnersText: 'menang 1 jam terakhir',
+          howToPlay: 'Cara bermain?',
+          step1: 'Daftar menggunakan tombol "Main"',
+          step2: 'Deposit dengan jumlah berapa saja',
+          step3: 'Cari "Mine Slot" atau "Rush Hour" di kasino',
+          step4: 'Mulai menang!',
+          ctaHint: '↑ Pilih permainan dan dapatkan bonusmu ↑',
+          sectionTitle: 'PILIH PERMAINANMU'
         }
       }
     };
 
     let userCountry = null;
 
-    // === CONFIG & STATS (Vercel) ===
+    // === CONFIG & STATS ===
     let offersConfig = null;
 
-    // Offer groups mapping (все страны должны быть здесь!)
     const OFFER_GROUPS = {
-      // Mineslot оффер 1: Мексика
-      'MX': 1,
-      // Mineslot оффер 2: Перу
-      'PE': 2,
-      // Mineslot оффер 3: Весь мир (AR, CO, CL, BR, EC, ES, VE и все остальные)
-      'DEFAULT': 3
+      'ID': 1,
+      'DEFAULT': 1
     };
 
-    // Load offers config from API (KV) с таймаутом + localStorage-кеш
     async function loadOffersConfig() {
       try {
         const ctrl = new AbortController();
-        setTimeout(() => ctrl.abort(), 3000); // 3сек таймаут
+        setTimeout(() => ctrl.abort(), 3000);
         const response = await fetch('/api/offers', { signal: ctrl.signal });
         const data = await response.json();
         if (data.offers) {
-          // Сохраняем в кеш
           try { localStorage.setItem('offers_cache', JSON.stringify(data.offers)); } catch (x) { }
           offersConfig = data.offers;
         }
       } catch (e) {
         console.error('Failed to load offers, using cache:', e);
-        // Берём из кеша
         try {
           const cached = JSON.parse(localStorage.getItem('offers_cache'));
           offersConfig = cached || null;
@@ -1133,28 +940,19 @@
       }
     }
 
-    // Get Mineslot offer settings
     function getOfferSettings(countryCode) {
       if (!offersConfig) {
         console.log('offersConfig not loaded, using defaults');
         return null;
       }
       const normalizedCode = countryCode ? countryCode.toUpperCase() : 'DEFAULT';
-      const offerNum = OFFER_GROUPS[normalizedCode] || 3;
+      const offerNum = OFFER_GROUPS[normalizedCode] || 1;
       console.log('Getting Mineslot offer for', normalizedCode, '-> offer', offerNum);
       return offersConfig[offerNum] || null;
     }
 
-    // Get Rush Hour link (PE gets separate offer, rest gets global)
     function getRushHourLink(countryCode) {
       if (!offersConfig) return null;
-      var code = countryCode ? countryCode.toUpperCase() : '';
-      // PE → отдельный оффер rh-pe
-      if (code === 'PE' && offersConfig['rh-pe']) {
-        var peLink = offersConfig['rh-pe'].link;
-        if (peLink && peLink.trim() !== '') return peLink.trim();
-      }
-      // Все остальные → глобальный rh
       if (offersConfig['rh']) {
         var link = offersConfig['rh'].link;
         if (link && link.trim() !== '') return link.trim();
@@ -1162,9 +960,7 @@
       return null;
     }
 
-    // Track stats via API
     function trackStat(type) {
-      // Fire and forget - не ждём ответа
       fetch('/api/stats', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1172,9 +968,7 @@
       }).catch(e => console.error('Stats error:', e));
     }
 
-    // Track CTA click (используем sendBeacon чтобы успеть отправить перед переходом)
     function trackClick() {
-      // sendBeacon гарантированно отправит данные даже при уходе со страницы
       if (navigator.sendBeacon) {
         const blob = new Blob([JSON.stringify({ type: 'click' })], { type: 'application/json' });
         navigator.sendBeacon('/api/stats', blob);
@@ -1183,8 +977,7 @@
       }
     }
 
-    // Track geo visit (по стране IP) — вызывается при заходе на страницу
-    let GEO_COUNTRY = 'XX'; // код страны по IP
+    let GEO_COUNTRY = 'ID';
     function trackGeoVisit() {
       var type = 'click:' + GEO_COUNTRY;
       fetch('/api/stats', {
@@ -1196,9 +989,8 @@
 
     // === END CONFIG & STATS ===
 
-    // Кэш в localStorage (24 часа)
     const GEO_CACHE_KEY = 'user_country_cache';
-    const GEO_CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 часа
+    const GEO_CACHE_DURATION = 24 * 60 * 60 * 1000;
 
     function getCachedCountry() {
       try {
@@ -1227,22 +1019,13 @@
       }
     }
 
-    // Определение по timezone (быстрый fallback)
     function guessCountryByTimezone() {
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       const timezoneMap = {
-        'America/Mexico_City': 'MX',
-        'America/Cancun': 'MX',
-        'America/Monterrey': 'MX',
-        'America/Buenos_Aires': 'AR',
-        'America/Argentina/Buenos_Aires': 'AR',
-        'America/Bogota': 'CO',
-        'America/Santiago': 'CL',
-        'America/Lima': 'PE',
-        'America/Sao_Paulo': 'BR',
-        'America/Caracas': 'VE',
-        'America/Guayaquil': 'EC',
-        'Europe/Madrid': 'ES'
+        'Asia/Jakarta': 'ID',
+        'Asia/Makassar': 'ID',
+        'Asia/Jayapura': 'ID',
+        'Asia/Pontianak': 'ID'
       };
 
       const country = timezoneMap[timezone];
@@ -1253,7 +1036,6 @@
       return null;
     }
 
-    // Проверка URL параметра (для тестирования)
     function getCountryFromURL() {
       const params = new URLSearchParams(window.location.search);
       const country = params.get('country');
@@ -1264,9 +1046,7 @@
       return null;
     }
 
-    // Основная функция определения GEO (серверный API + fallbacks)
     async function detectGeo() {
-      // 0. Проверяем URL параметр (для тестирования: ?country=MX или ?clearcache=1)
       const params = new URLSearchParams(window.location.search);
       if (params.get('clearcache')) {
         localStorage.removeItem(GEO_CACHE_KEY);
@@ -1276,14 +1056,12 @@
       let country = getCountryFromURL();
       if (country) { GEO_COUNTRY = country; return country; }
 
-      // 1. Проверяем кэш (мгновенно - 0ms)
       country = getCachedCountry();
       if (country) { GEO_COUNTRY = country; return country; }
 
-      // 2. Серверный API (Vercel → x-vercel-ip-country, быстро ~50ms)
       try {
         const ctrl = new AbortController();
-        setTimeout(() => ctrl.abort(), 3000); // 3сек таймаут
+        setTimeout(() => ctrl.abort(), 3000);
         const response = await fetch('/api/geo', { signal: ctrl.signal });
         const data = await response.json();
         if (data.country) {
@@ -1296,7 +1074,6 @@
         console.error('Geo API failed:', e);
       }
 
-      // 3. Timezone как последний fallback
       country = guessCountryByTimezone();
       if (country) {
         GEO_COUNTRY = country;
@@ -1304,33 +1081,23 @@
         return country;
       }
 
-      // 4. Fallback на DEFAULT
-      console.log('Using DEFAULT country');
-      return null;
+      console.log('Using DEFAULT country (ID)');
+      return 'ID';
     }
 
-    // Функция применения конфига страны
     function applyCountryConfig(countryCode) {
-      // Нормализуем код страны (всегда uppercase)
       const normalizedCode = countryCode ? countryCode.toUpperCase() : 'DEFAULT';
-
-      // Проверяем есть ли страна в конфиге
       const hasConfig = COUNTRIES_CONFIG[normalizedCode];
       const config = hasConfig || COUNTRIES_CONFIG.DEFAULT;
       userCountry = config;
 
-      // Debug logging
       console.log('=== GEO DEBUG ===');
       console.log('Country code:', normalizedCode);
-      console.log('Has config:', !!hasConfig);
       console.log('Using config for:', hasConfig ? normalizedCode : 'DEFAULT');
-      console.log('Offer group:', OFFER_GROUPS[normalizedCode] || 3);
 
-      // Получаем настройки оффера из админки
       const offerSettings = getOfferSettings(normalizedCode);
       console.log('Offer settings from admin:', offerSettings);
 
-      // Обновляем текст
       document.getElementById('cta-text').textContent = config.text.cta;
       document.getElementById('cta-text-rh').textContent = config.text.cta;
       document.getElementById('bonus-title').textContent = config.text.bonusTitle;
@@ -1346,24 +1113,19 @@
         document.getElementById('section-title').innerHTML = '<span>▸</span> ' + config.text.sectionTitle;
       }
 
-      // Бонус: используем из админки если задан, иначе дефолт
       const bonusEl = document.getElementById('bonus-amount');
       const currencyEl = document.getElementById('bonus-currency');
 
       if (offerSettings && offerSettings.bonus) {
-        // Бонус из админки (до 20 символов, показываем как есть)
         bonusEl.textContent = offerSettings.bonus;
-        currencyEl.textContent = ''; // Валюта уже в тексте бонуса
+        currencyEl.textContent = '';
       } else {
-        // Дефолтный бонус
         bonusEl.textContent = formatNumber(config.prizes.bonus, config.locale);
         currencyEl.textContent = config.currency;
       }
 
-      // Обновляем гифку
       document.getElementById('gameplay-gif').src = config.gif;
 
-      // Ссылка Mineslot: приоритет API оффер → дефолт из конфига
       const ctaLink = document.getElementById('cta-link');
       if (offerSettings && offerSettings.link && offerSettings.link.trim() !== '') {
         ctaLink.href = offerSettings.link.trim();
@@ -1371,36 +1133,27 @@
         ctaLink.href = config.defaultLink || config.offer;
       }
 
-      // Ссылка Rush Hour: отдельный оффер 'rh' / 'rh-pe'
       const ctaLinkRh = document.getElementById('cta-link-rh');
       if (ctaLinkRh) {
         var rhLink = getRushHourLink(normalizedCode);
         if (rhLink) {
           ctaLinkRh.href = rhLink;
         } else {
-          // Фоллбек: хардкод дефолты (не копируем Mineslot — это другой оффер)
-          ctaLinkRh.href = normalizedCode === 'PE'
-            ? 'https://lkpf.pro/540ac634'
-            : 'https://lkpf.pro/540ac634';
+          ctaLinkRh.href = 'https://lkeh.pro/bc274a';
         }
       }
 
+      document.documentElement.lang = 'id';
 
-      // Меняем язык страницы
-      document.documentElement.lang = config.locale.split('-')[0];
-
-      // Генерируем выигрыши для бегущей строки
       generateWinners(config);
     }
 
-    // Форматирование чисел
     function formatNumber(num, locale) {
       return new Intl.NumberFormat(locale, {
         maximumFractionDigits: 0
       }).format(num);
     }
 
-    // Генерация выигрышей для бегущей строки
     function generateWinners(config) {
       const track = document.getElementById('winners-track');
       if (!track) {
@@ -1415,7 +1168,6 @@
 
       const winners = [];
 
-      // Генерируем 30 случайных выигрышей
       for (let i = 0; i < 30; i++) {
         const randomAmount = Math.floor(
           Math.random() * (config.prizes.max - config.prizes.min) + config.prizes.min
@@ -1438,18 +1190,15 @@
         `;
       }).join('');
 
-      // Дублируем для бесшовной анимации
       track.innerHTML = winnerHTML + winnerHTML;
 
-      // Перезапускаем анимацию (сброс и запуск заново)
       track.style.animation = 'none';
-      track.offsetHeight; // Trigger reflow
+      track.offsetHeight;
       track.style.animation = 'scroll-left 50s linear infinite';
     }
 
-    // Таймер обратного отсчета
     function startTimer() {
-      let timeLeft = 5 * 60; // 5 минут в секундах
+      let timeLeft = 5 * 60;
       const timerElement = document.getElementById('timer');
 
       function updateTimer() {
@@ -1458,7 +1207,7 @@
         timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
         if (timeLeft <= 0) {
-          timeLeft = 5 * 60; // Сброс на 5 минут
+          timeLeft = 5 * 60;
         } else {
           timeLeft--;
         }
@@ -1468,40 +1217,32 @@
       setInterval(updateTimer, 1000);
     }
 
-    // Анимация live counter
     function animateLiveCounter() {
       const liveCount = document.getElementById('live-count');
       const winnersCount = document.getElementById('winners-count');
 
       setInterval(() => {
-        // Изменяем количество игроков (2500-3500)
         const currentPlayers = parseInt(liveCount.textContent.replace(/[,\.]/g, ''));
-        const change = Math.floor(Math.random() * 30) - 15; // -15 до +15
+        const change = Math.floor(Math.random() * 30) - 15;
         const newPlayers = Math.max(2500, Math.min(3500, currentPlayers + change));
-        liveCount.textContent = new Intl.NumberFormat('es').format(newPlayers);
+        liveCount.textContent = new Intl.NumberFormat('id-ID').format(newPlayers);
       }, 3000);
 
       setInterval(() => {
-        // Изменяем количество победителей (100-200)
         const currentWinners = parseInt(winnersCount.textContent.replace(/[+,\.]/g, ''));
-        const change = Math.floor(Math.random() * 10) - 5; // -5 до +5
+        const change = Math.floor(Math.random() * 10) - 5;
         const newWinners = Math.max(100, Math.min(200, currentWinners + change));
         winnersCount.textContent = '+' + newWinners;
       }, 5000);
     }
 
-    // Детектор TikTok браузера
     function isTikTokBrowser() {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
       return /TikTok/i.test(userAgent) || /musical_ly/i.test(userAgent) || /BytedanceWebview/i.test(userAgent);
     }
 
-
-
-    // Инициализация при загрузке
     window.addEventListener('DOMContentLoaded', async () => {
       try {
-        // 1. Определяем гео (с таймаутом)
         let countryCode = null;
         try {
           countryCode = await detectGeo();
@@ -1509,12 +1250,10 @@
           console.error('detectGeo crashed:', e);
         }
 
-        // 2. TikTok-детект
         if (isTikTokBrowser()) {
           try { trackStat('tiktok'); } catch (e) { }
           try { trackGeoVisit(); } catch (e) { }
 
-          // Показываем предупреждение для TikTok
           document.body.innerHTML = `
             <style>
               @keyframes bounce-arrow {
@@ -1541,22 +1280,22 @@
             <div class="tiktok-warning-container" style="min-height: 100vh; display: flex; align-items: flex-start; justify-content: center; padding: 15px 20px 20px 20px; background: linear-gradient(140deg, #0b1018 0%, #151d2d 50%, #101726 100%);">
               <div class="tiktok-warning-card" style="max-width: 500px; width: 100%; padding: 40px 30px; background: rgba(17, 24, 39, 0.9); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 28px; box-shadow: 0 24px 44px rgba(8, 11, 20, 0.6); backdrop-filter: blur(22px); text-align: center;">
                 <div class="warning-icon" style="font-size: 64px; margin-bottom: 20px; animation: pulse 2s infinite;">⚠️</div>
-                <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #f8fafc; margin-bottom: 20px;">Abrir en Navegador</h1>
+                <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #f8fafc; margin-bottom: 20px;">Buka di Browser</h1>
                 <p style="font-size: 18px; color: rgba(248, 250, 252, 0.8); line-height: 1.6; margin-bottom: 30px;">
-                  Para abrir el juego, toca los <strong>3 puntos</strong> en la esquina superior derecha y selecciona <strong>"Abrir en navegador"</strong>
+                  Untuk membuka permainan, ketuk <strong>3 titik</strong> di pojok kanan atas dan pilih <strong>"Buka di browser"</strong>
                 </p>
                 <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 30px;">
                   <div style="display: flex; align-items: center; gap: 15px; padding: 15px 20px; background: linear-gradient(135deg, rgba(124, 92, 255, 0.1), rgba(124, 92, 255, 0.05)); border: 1px solid rgba(124, 92, 255, 0.2); border-radius: 15px; text-align: left;">
                     <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #7c5cff, #9d7fff); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: white; flex-shrink: 0;">1</div>
-                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">Toca <strong style="color: #fbbf24;">...</strong> (tres puntos)</div>
+                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">Ketuk <strong style="color: #fbbf24;">...</strong> (tiga titik)</div>
                   </div>
                   <div style="display: flex; align-items: center; gap: 15px; padding: 15px 20px; background: linear-gradient(135deg, rgba(124, 92, 255, 0.1), rgba(124, 92, 255, 0.05)); border: 1px solid rgba(124, 92, 255, 0.2); border-radius: 15px; text-align: left;">
                     <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #7c5cff, #9d7fff); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: white; flex-shrink: 0;">2</div>
-                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">Selecciona "Abrir en navegador"</div>
+                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">Pilih "Buka di browser"</div>
                   </div>
                   <div style="display: flex; align-items: center; gap: 15px; padding: 15px 20px; background: linear-gradient(135deg, rgba(124, 92, 255, 0.1), rgba(124, 92, 255, 0.05)); border: 1px solid rgba(124, 92, 255, 0.2); border-radius: 15px; text-align: left;">
                     <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #7c5cff, #9d7fff); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: white; flex-shrink: 0;">3</div>
-                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">¡Disfruta del juego!</div>
+                    <div style="font-size: 16px; color: rgba(248, 250, 252, 0.9);">Selamat bermain!</div>
                   </div>
                 </div>
               </div>
@@ -1565,29 +1304,24 @@
           return;
         }
 
-        // 3. Трекинг (fire-and-forget, не блокирует)
         try { trackStat('landing'); } catch (e) { }
         try { trackGeoVisit(); } catch (e) { }
 
-        // 4. Загрузка оффера
         try {
           await loadOffersConfig();
         } catch (e) {
           console.error('loadOffersConfig failed:', e);
         }
 
-        // 5. Применяем конфиг ВСЕГДА
         try {
-          applyCountryConfig(countryCode || 'DEFAULT');
+          applyCountryConfig(countryCode || 'ID');
         } catch (e) {
           console.error('applyCountryConfig failed:', e);
         }
 
-        // 6. Запускаем таймер и live counter
         try { startTimer(); } catch (e) { }
         try { animateLiveCounter(); } catch (e) { }
 
-        // 7. How to Play toggle
         try {
           document.getElementById('how-to-play-btn').addEventListener('click', function () {
             const panel = document.getElementById('how-to-play-panel');
@@ -1596,7 +1330,6 @@
           });
         } catch (e) { }
 
-        // 8. Track CTA clicks
         try {
           document.getElementById('cta-link').addEventListener('click', trackClick);
           var ctaLinkRh = document.getElementById('cta-link-rh');
@@ -1604,7 +1337,6 @@
         } catch (e) { }
 
       } finally {
-        // ГАРАНТИРОВАННО скрываем лоадер — даже если ВСЁ упало
         setTimeout(function () {
           var loader = document.getElementById('geo-loading');
           if (loader) loader.classList.add('hidden');
@@ -1615,4 +1347,5 @@
 </body>
 
 </html>
+
 
